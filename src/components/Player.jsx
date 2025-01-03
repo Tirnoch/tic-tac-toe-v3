@@ -27,8 +27,8 @@ const Player = ({ initialName, symbol, isActive, onChangeName }) => {
       <span className="player">
         {editableName}
         <span className="player-symbol">{symbol}</span>
+        <button onClick={handleEdit}>{btnCaption}</button>
       </span>
-      <button onClick={handleEdit}>{btnCaption}</button>
     </li>
   );
 };

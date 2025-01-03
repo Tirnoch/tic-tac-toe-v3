@@ -35,8 +35,8 @@ body {
 
 h1 {
   font-family: 'Caprasimo', cursive;
-  font-size: 3rem;
-  margin: 0 auto 3rem auto;
+  font-size: 2rem;
+  margin: 0 auto 2rem auto;
   color: #3f3b00;
 }
 
@@ -116,7 +116,7 @@ h1 {
 .player input {
   font: inherit;
   font-size: 1rem;
-  width: 10rem;
+  width: 8rem;
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
@@ -172,12 +172,12 @@ ol {
 }
 
 #game-board button {
-  width: 8rem;
-  height: 8rem;
+  width: 4rem;
+  height: 4rem;
   border: none;
   background: #aca788;
   color: #3f3b00;
-  font-size: 5rem;
+  font-size: 2rem;
   cursor: pointer;
   font-family: 'Caprasimo', cursive;
   padding: 1rem;
