@@ -342,3 +342,16 @@ ol {
     transform: scale(1);
   }
 }
+@media only screen and (min-width: 600px) {
+  #game-board button {
+    width: 10rem;
+    height: 10rem;
+    border: none;
+    background: #aca788;
+    color: #3f3b00;
+    font-size: 8rem;
+    cursor: pointer;
+    font-family: 'Caprasimo', cursive;
+    padding: 1rem;
+  }
+}
