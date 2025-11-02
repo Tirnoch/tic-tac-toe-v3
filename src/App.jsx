@@ -61,10 +61,12 @@ function App() {
 
   const activePlayer = deriveActivePlayer(gameTurns);
   const gameBoard = deriveGameboard(gameTurns);
-
-  const hasDraw = gameTurns.length === 9 && !winner;
   const winner = deriveWinner(gameBoard, players);
+  const hasDraw = gameTurns.length === 9 && !winner;
   const handleSelectSquare = (rowIndex, colIndex) => {
+    if (gameBoard[rowIndex][colIndex] || winner) {
+      return;
+    }
     setGameTurns((prevTurns) => {
       const currentPlayer = deriveActivePlayer(prevTurns);
       const updatedTurns = [
